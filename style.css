@@ -1,0 +1,707 @@
+html body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: transparent;   
+   
+}
+
+nav .navbar-toggler{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 90%;
+}
+
+nav .navbar-collapse {
+    position: relative;
+    left: 55%;
+}
+
+nav .dropdown-toggle{
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+nav li:hover:after{
+    width: 90%;
+    position: relative;
+    left: 10%;
+    
+}
+
+nav li:after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #709faf;
+    transition: .2s;
+    position: relative;
+    left: 10%;
+}
+
+nav li a:hover{
+    color: #709faf;
+}
+
+nav .home{
+    color: #fff;
+    font-size: .65rem;
+    font-weight: 700;
+}
+
+nav .btn{
+    background-color: transparent;
+    border-radius: 0;
+    font-size: .6rem;
+    color: #fff;
+    font-weight: 800;
+    border: none;
+    letter-spacing: 1px;
+    transition: color .5s;
+}
+
+nav .btn:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+nav .btn span{
+    padding: 2px 15px;
+    border: 1.5px solid #fff;
+}
+
+nav .btn span:hover{
+    background-color: #fff;
+    transition: background-color .5s;
+}
+
+.intro{
+    height: 100vh;
+    background-image: url(img/background10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+ 
+}
+
+.intro .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.intro .welcome{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.intro h1{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 100 !important;
+    font-family: 'Gilda display', san-serif;
+}
+
+.intro .btn{
+    border-radius: 0;
+    margin-top: 10px;
+    background-color: #709faf;
+    text-align: center;
+}
+
+.intro .btn span{
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 15px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 1024px){
+    .intro{
+        background-size: 100% 100%;
+        background-position: center center;
+        /* object-fit: cover;
+        object-position: center center; */
+    }
+
+    .intro h1{
+        font-size: 3rem;
+    }
+
+    .intro .btn span{
+        font-size: 1.1rem;
+    }
+
+    nav .navbar-collapse {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    nav .navbar-collapse:active{
+        background-color: #fff;
+    }
+}
+
+.landing .padding{
+    padding: 50px;
+}
+
+.landing .title{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.landing h1{
+    font-family: 'Gilda display', san-serif;
+    letter-spacing: 2px;
+}
+
+.landing .text-left{
+    margin: 10px 200px;
+}
+
+.landing .text-left span{
+    font-size: .7rem;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 1024px){
+    .landing .text-left{
+        margin: 20px 0 !important;
+    } 
+
+    .landing .text-left span{
+        font-size: .9rem;
+        font-weight: 200;
+    }
+
+    .landing .title{
+        width: 100%;
+      
+    }
+
+    .landing h1{
+        font-size: 1.8rem;
+       
+    }
+}
+
+.check{
+    background-image: url(img/background8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.3);
+}
+
+.check .padding{
+    padding: 30px 50px;   
+}
+
+.check .title{
+    font-family: 'Gilda display', san-serif;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.check .card-reservation{
+    border-radius: 0;
+    padding: 20px 0;
+    background-color: #709faf;
+    color: #fff;
+}
+
+.check .card-reservation .card-title{
+    padding: 0px 20px;
+}
+
+.check .card-reservation h4{
+    font-family: 'Gilda display', san-serif;
+}
+
+.check .card-reservation span{
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.check .card-reservation .line{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 10px 0;
+}
+
+.check .card-calendar{
+    border-radius: 0;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    
+
+}
+
+.check .align{
+   position: relative;
+   top: 25%;
+}
+
+.check .card-calendar .card-body
+{
+    border-radius: 0;
+    padding: 0 !important
+}
+
+.check .card-calendar span{
+    font-size: .6rem;
+}
+
+.check .card-calendar .card-body{
+    padding: 0;
+    color: #709faf;
+   
+}
+
+.check .card-calendar .card-body h1{
+    border-right: 1px solid #709faf;
+}
+
+.check .card-calendar .card-avail{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin: 16px 0;
+}
+
+.check .card-calendar .card-avail .avail{
+    font-size: .7rem;
+}
+
+@media only screen and (max-width: 1024px){
+    .check .align{
+        position: relative;
+        top: 0%;
+        padding: 20px 0;    
+        display: flex;
+        justify-content: center;
+     }
+}
+
+.climb{
+    background-color: #efefef;
+}
+
+.climb .padding{
+    padding: 40px;
+}
+
+.climb .alignRight{
+    padding-right: 0;
+}
+
+.climb .alignLeft{
+    padding-left: 0;
+}
+
+.climb .alignRight-2{
+    padding-left: 0;
+}
+
+.climb .alignLeft-2{
+    padding-right: 0;
+}
+
+.climb .wrapper{
+    width: 100%;
+    height: 25rem;
+    background-color: #fff;
+}
+
+.climb .wrapper-text{
+    padding: 50px
+}
+
+.climb .wrapper-text h2{
+    font-family: 'Gilda display', san-serif;
+    padding-bottom: 20px;
+    font-weight: 100px;
+    font-size: 2rem;
+}
+
+.climb .wrapper-text span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100 !important;
+}
+
+.climb .btn{
+    border-radius: 0;
+    font-size: .6rem;
+    padding: 10px 30px;
+    border: 2px solid #709faf;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #709faf;
+    margin-bottom: 20px;
+}
+
+.climb .btn:hover{
+    background-color: #709faf;
+    color: #fff;
+}
+
+
+.climb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+@media only screen and (max-width: 1023px){
+    .alignRight{
+        padding-right: 15px !important;
+    }
+
+    .alignLeft{
+        padding-left: 15px !important;
+    }
+
+    .alignRight-2{
+        padding-left: 15px !important;
+    }
+
+    .alignLeft-2{
+        padding-right: 15px !important;
+    }
+
+    .climb .wrapper{
+        height: 100%;
+    }
+
+    .climb .padding{
+        padding: 40px 0 !important;
+    }
+}
+
+.rooms{
+    background-image: url(img/background9.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+
+}
+
+.rooms .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.rooms .text-center{
+    padding: 0px 40px 50px;
+}
+
+.rooms .title{
+    padding: 50px;
+    font-family: 'Gilda display', san-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+
+.rooms .title h1{
+    font-size: 3em;
+}
+
+.rooms .card{
+    border-radius: 0;
+    border: none;
+}
+
+.rooms .card img{
+    width: 100%;
+}
+
+.rooms .card-body h4{
+    font-family: 'Gilda display', san-serif;
+    font-weight: 100 !important;
+}
+
+.rooms .card-body .cardText{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100 !important;
+    font-size: .8rem;
+    padding-bottom: 10px;
+}
+
+.rooms .card-body .spanText{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100 !important;
+    font-size: .8rem;
+}
+
+.rooms .btn{
+    border-radius: 0;
+    font-size: .7rem;
+    margin: 10px 0 5px 0;
+    padding: 8px 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1.5px solid #709faf;
+}
+
+.rooms .btn:hover{
+    background-color: #709faf;
+}
+
+.rooms i{
+   font-size: .9rem;
+   color: rgb(190, 190, 190);
+}
+
+.rooms .readmore{
+    float: right;
+    font-size: .6rem;
+    cursor: pointer;
+    color: #709faf;
+    line-height: 30px;
+}
+
+.rooms .readmore:hover{
+    color: #91a3a8;
+}
+
+.rooms .fa-chevron-right{
+    color: #709faf;
+    font-size: .5rem;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 1024px){
+    .rooms .card{
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .rooms .title h1{
+        font-size: 2.3rem;
+    }
+
+    .rooms .text-center{
+        padding: 20px 10px;
+    }
+}
+
+.testimonial{
+    padding: 30px 0;
+}
+
+.testimonial .title{
+    font-family: 'Gilda display', san-serif;
+    padding: 30px 5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.testimonial .card{
+    width: 100%;
+}
+
+.testimonial .card-body{
+    padding: 0 !important;
+   
+}
+
+.testimonial .wrapper{
+    padding: 30px;
+    background-color: #a3c6d2;
+}
+
+.testimonial .wrapper::before{
+    content:"";
+    width: 15px;
+    height: 15px;
+    background-color: #a3c6d2;
+    position: absolute;
+    left: calc(50% - 15px);
+    transform: rotate(45deg);
+    bottom: -7px;
+}
+
+.testimonial .wrapper span{
+    font-size: .7em;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 100 !important;
+    color: #849ca0;
+}
+
+.testimonial .card-footer .cardImage{
+  width: 100%;
+}
+
+.testimonial .card-footer img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testimonial .card-footer .clientName{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 7px;
+}
+
+.testimonial .card-footer .clientName h5{ 
+    font-family: 'Gilda display', san-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.testimonial .card-footer .clientName span{ 
+    font-family: 'Roboto' sans-serif;
+    font-size: .8rem;
+    color: #709faf;
+}
+
+
+@media only screen and (max-width: 414px){
+    .testimonial .title h1{
+        font-size: 1rem;
+    }
+    
+    .testimonial .title{
+       padding: 15px 2.5rem;
+    }
+}
+
+.contact{
+    background-image: url(img/background11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  bottom;
+    position: relative;
+    
+    z-index: 0;
+    padding: 50px 0;
+}
+
+.contact .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.contact .title h1{
+    color: #fff;
+}
+
+.contact .inputSide h4{
+    font-family: 'Gilda display', san-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.contact .inputSide span{
+    font-weight: 100 !important;
+    font-size: .75rem;
+    font-family: 'Roboto' sans-serif;
+    line-height: 1px;
+    letter-spacing: 1px;
+}
+
+.contact form{
+    padding-top: 20px;
+}
+
+.contact form input{
+    width: 100%;
+    height: 35px;
+    margin: 5px 0;
+}
+
+.contact form textarea{
+    width: 100%;
+    height: 100px;
+}
+
+.contact .btn{
+    border-radius: 0;
+    font-size: .6rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #709faf;
+    margin-top: 10px;
+    transition: background-color 1s;
+}
+
+.contact iframe{
+    padding-bottom: 20px;
+}
+
+.contact .btn:hover{
+    background-color: #8a989c;
+}
+
+.contact .address{
+    padding-top: 5px;
+}
+
+.contact hr{   
+    height: 0px !important;
+    background-color: #fff;
+}
+
+footer{
+    background-color: #333333;
+}
+
+footer .footerTitle{
+    padding: 20px;
+}
+
+footer .footerTitle span{
+    font-size: .7rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
