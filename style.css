@@ -16,14 +16,14 @@ nav .navbar-toggler{
 
 nav .navbar-collapse {
     position: relative;
-    left: 55%;
+    left: 50%;
 }
 
 nav .dropdown-toggle{
     color: #fff;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .65rem;
+    font-size: .85rem;
     font-weight: 700;
     letter-spacing: 1px;
     margin-left: 20px;
@@ -53,14 +53,14 @@ nav li a:hover{
 
 nav .home{
     color: #fff;
-    font-size: .65rem;
+    font-size: .85rem;
     font-weight: 700;
 }
 
 nav .btn{
     background-color: transparent;
     border-radius: 0;
-    font-size: .6rem;
+    font-size: .7rem;
     color: #fff;
     font-weight: 800;
     border: none;
