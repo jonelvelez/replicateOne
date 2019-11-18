@@ -1,12 +1,22 @@
      /* Navbar animation */
      
      let nav = document.querySelector('.navbar');
-     let navbarIcon = document.querySelector('.navbar-toggler-icon')
-
+     let navbarIcon = document.querySelector('.navbar .fa-bars')
+     let navbarClose = document.querySelector('.navbar .fa-times')
 
      navbarIcon.addEventListener('click', () => {
-        nav.style.backgroundColor = "#d8d7d7";
+         nav.style.backgroundColor = "#d8d7d7";
+         navbarIcon.style.display = "none";
+         navbarClose.style.display = "block";
      });
+
+     navbarClose.addEventListener('click', () => {
+      nav.style.backgroundColor = "transparent";
+      navbarIcon.style.display = "block";
+      navbarClose.style.display = "none";
+   });
+
+ 
 
      // End of Navbar animation
    
