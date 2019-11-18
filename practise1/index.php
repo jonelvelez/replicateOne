@@ -1,84 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-
-     <!--Bootstrap cdn-->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-     <!--Fontawesome Icon-->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-     <!--Google Font-->
-     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
- 
-     <!--Hover Effect -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
- 
-    <title>Document</title>
-</head>
-<body>
-
-        <div class="float-wrapper">
-            <p class="float">
-                <i class="fa fa-chevron-up"></i>
-            </p>
-        </div>
-  
-    <nav class="navbar navbar-expand-lg fixed-top">
-     
-     
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse " id="navContent">
-            <ul class="navbar-nav ">
-                <li class="link-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="dropdownContent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Website Pages</span></a>
-                   
-                    <div class="dropdown-menu" aria-labelledby="dropdownContent">
-                        <a href="#" class="dropdown-item">Action</a>
-                    </div>
-                </li>
-
-                <li class="link-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="dropdownContent2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Website Templates 2</span></a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownContent2">
-                        <a href="#" class="dropdown-item">Action</a>
-                    </div>
-                </li>
-
-                <li class="link-item">
-                    <a href="#" class="nav-link home"><span>Home</span></a>
-                </li>
-
-                <button type="button" class="btn btn-outline-secondary"><span>DOWNLOAD</span></button>
-            </ul>
-        </div>
-    </nav>
+<?php get_header(); ?>
 
 <section class="intro">
-    <!-- <div class="overlay"></div> -->
+    <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row text-center">
                <div class="col-12 welcome centeralign">
                     <h1 class="display-4">Website Landing Page Template</h1>
                     <button class="btn btn-secondary"><span>DOWNLOAD NOW</span></button>
                </div>
-               <div class="circle">
-                <i class="icon fa fa-chevron-down text-white"></i>
-            </div>
         </div>
     </div>
-
 </section>
-
-
-
 
 <section class="landing">
     <div class="container-fluid">
@@ -236,7 +168,7 @@
             <div class="col-12 col-lg-4 pt-3 ">
                 <div class="card">
                     <div class="card-title">
-                        <img class="hvr-grow" src="img/04.jpg" alt="">
+                        <img src="img/04.jpg" alt="">
                     </div>
                          <div class="card-body text-left">                  
                             <h4>Small Room</h4>
@@ -260,7 +192,7 @@
             <div class="col-12 col-lg-4 pt-3">
                     <div class="card">
                         <div class="card-title">
-                            <img class="hvr-grow" src="img/05.jpg" alt="">
+                            <img src="img/05.jpg" alt="">
                         </div>
                              <div class="card-body text-left">                  
                                 <h4>Apartment</h4>
@@ -285,7 +217,7 @@
                 <div class="col-12 col-lg-4 pt-3">
                         <div class="card">
                             <div class="card-title">
-                                <img class="hvr-grow" src="img/03.jpg" alt="">
+                                <img src="img/03.jpg" alt="">
                             </div>
                                  <div class="card-body text-left">                  
                                     <h4>Luxury Room</h4>
@@ -316,6 +248,7 @@
         <div class="title text-center">
             <h1>HTML Landing Page Templates Free Website Builder</h1>
         </div>
+     
             
             <div class="row">
                 <div class="col-12 col-lg-4">
@@ -480,21 +413,6 @@
     </div>
 </section>
 
-<footer>
-    <div class="footerTitle text-center">
-        <span>© Copyright 2018 Mobirise - All Rights Reserved</span>
-    </div>
-
-</footer>
 
 
-
-
-<script src="js/jquery.js"></script>
-<script src="js/main.js"></script>
- 
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php get_footer(); ?>
